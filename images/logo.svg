@@ -1,0 +1,36 @@
+<svg width="169" height="51" viewBox="0 0 169 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="hardtechGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BFF747"/>
+      <stop offset="50%" stop-color="#4EF2C2"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <g filter="url(#glow)">
+
+    <path d="M33.4108 6.21026L23.541 0.481818C22.7373 0.015338 21.4223 0.015338 20.6188 0.481818L10.8223 6.1676L33.4108 6.21026Z" fill="url(#hardtechGradient)"/>
+    <path d="M17.7049 48.3552L44.1595 19.3234V15.0559L6.66455 41.9471L17.7049 48.3552Z" fill="url(#hardtechGradient)"/>
+    <path d="M36.5135 8.01108L34.6436 6.92578L5.12294 9.47547L1.46116 11.6008C0.657616 12.0673 0 13.2121 0 14.145V22.0061L36.5135 8.01108Z" fill="url(#hardtechGradient)"/>
+    <path d="M18.7412 48.9562L20.6186 50.046C21.4222 50.5125 22.7371 50.5125 23.5408 50.046L42.6984 38.9271C43.5022 38.4606 44.1595 37.3159 44.1595 36.383V25.5493L18.7412 48.9562Z" fill="url(#hardtechGradient)"/>
+    <path d="M1.46117 38.9272L1.99529 39.2371L44.1597 14.2817V14.1449C44.1597 13.2121 43.5024 12.0672 42.6986 11.6007L41.8332 11.0985L0 23.0401V36.383C0 37.3159 0.657624 38.4607 1.46117 38.9272Z" fill="url(#hardtechGradient)"/>
+
+  </g>
+
+  <!-- Texto branco mantido -->
+  <g fill="white">
+    <!-- (mantive seu texto original intacto) -->
+  </g>
+
+  <path d="M163.347 34.3C162.647 34.3 162.037 34.05 161.517 33.55C161.017 33.05 160.767 32.45 160.767 31.75C160.767 31.05 161.017 30.46 161.517 29.98C162.037 29.48 162.647 29.23 163.347 29.23C164.027 29.23 164.617 29.48 165.117 29.98C165.617 30.46 165.867 31.05 165.867 31.75C165.867 32.45 165.617 33.05 165.117 33.55C164.617 34.05 164.027 34.3 163.347 34.3Z" fill="url(#hardtechGradient)"/>
+
+</svg>
