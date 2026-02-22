@@ -135,223 +135,221 @@
 		</div>
 	</header>
 	<!-- Header End -->
+<div class="hero-ultra">
 
-<div class="hero hero-premium">
-
-    <div class="hero-overlay"></div>
-
-    <div class="container">
-        <div class="hero-content text-center">
-            <span class="hero-badge">Agência Digital & Tecnologia</span>
-
-            <h1 class="hero-title">
-                Transformamos pesquisas no Google em
-                <span>clientes no seu WhatsApp.</span>
-            </h1>
-
-            <p class="hero-subtitle">
-                Criamos páginas estratégicas e posicionamos sua empresa para gerar mais chamados e agendamentos todos os dias.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="https://wa.me/5514998231397?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" class="btn-primary">
-                    🚀 Solicitar Diagnóstico
-                </a>
-
-                <a href="#porti" class="btn-outline">
-                    📂 Ver Projetos
-                </a>
-            </div>
-
-            
-            <div class="hero-trust">
-                <span>+50 projetos entregues</span>
-                <span>•</span>
-                <span>Clientes no Brasil inteiro</span>
-                <span>•</span>
-                <span>100% foco em performance</span>
-            </div>
-
-
-        </div>
-            <div class="scroll-indicator">
-            <span class="scroll-text">Scroll</span>
-            <div class="scroll-dot"></div>
-        </div>
-
+    <div class="hero-bg">
+        <img src="images/hero3.png" alt="">
     </div>
 
+    <div class="hero-overlay-ultra"></div>
 
+    <div class="hero-container-ultra">
+        <div class="hero-content-ultra">
+
+            <div class="hero-badge-ultra">
+                🚀 Especialistas em Crescimento Digital
+            </div>
+
+            <h1 class="hero-title-ultra">
+                Sua empresa aparece no Google.
+                <span>Mas não converte.</span>
+                Nós resolvemos isso.
+            </h1>
+
+            <p class="hero-subtitle-ultra">
+                Criamos páginas estratégicas e posicionamos sua empresa
+                para transformar pesquisas em clientes reais no WhatsApp.
+            </p>
+
+            <div class="hero-buttons-ultra">
+                <a href="https://wa.me/5514998231397?text=Olá, gostaria de mais informações"
+                   class="btn-primary-ultra" target="_blank">
+                    Solicitar Diagnóstico Gratuito
+                </a>
+
+                <a href="#porti" class="btn-secondary-ultra">
+                    Ver Projetos
+                </a>
+            </div>
+
+            <div class="hero-stats-ultra">
+                <div class="stat-box">
+                    <strong>+50</strong>
+                    <span>Projetos Entregues</span>
+                </div>
+                <div class="stat-box">
+                    <strong>3x</strong>
+                    <span>Mais Agendamentos</span>
+                </div>
+                <div class="stat-box">
+                    <strong>100%</strong>
+                    <span>Foco em Performance</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
-
 <style>
-    .hero-trust {
-    margin-top: 35px;
-    font-size: 14px;
-    color: rgba(255,255,255,0.6);
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-}
-.scroll-indicator {
-    position: absolute;
-    bottom: 60px;   /* sobe ele */
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    z-index: 5;
-}
-
-.scroll-text {
-    font-size: 12px;
-    letter-spacing: 2px;
-    color: #b4f000;
-    margin-bottom: 8px;
-    display: block;
-}
-
-.scroll-dot {
-    width: 6px;
-    height: 6px;
-    background: #b4f000;
-    border-radius: 50%;
-    margin: 0 auto;
-    animation: pulse 1.5s infinite;
-    box-shadow: 0 0 10px rgba(180,240,0,0.9);
-}
-
-@keyframes pulse {
-    0% { transform: translateY(0); opacity: 0.3; }
-    50% { transform: translateY(8px); opacity: 1; }
-    100% { transform: translateY(0); opacity: 0.3; }
-}
-
-.hero-badge {
-    display: inline-block;
-    margin-bottom: 25px;
-    font-size: 13px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    color: #b4f000;
-    padding: 6px 14px;
-    border: 1px solid rgba(180,240,0,0.4);
-    border-radius: 30px;
-    background: rgba(180,240,0,0.08);
-}
-
-
-    .hero-premium {
+    .hero-ultra {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url("images/hero3.png") center center / cover no-repeat;
-    padding: 120px 20px;
+    background: #000;
+    padding: 120px 20px 80px;
     overflow: hidden;
-     filter: brightness(0.85) contrast(1.1);
-     
+    font-family: 'Inter', sans-serif;
 }
-.hero-premium::before {
-    content: "";
+
+/* Fundo mais visível */
+.hero-bg {
     position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(
-        circle,
-        rgba(180,240,0,0.15),
-        transparent 70%
-    );
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 0;
     z-index: 0;
 }
 
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.35; /* mais impacto */
+    filter: brightness(0.8) contrast(1.2);
+}
 
-.hero-overlay {
+/* Overlay com profundidade */
+.hero-overlay-ultra {
     position: absolute;
     inset: 0;
-    background:
-        linear-gradient(
-            90deg,
-            rgba(0,0,0,0.85) 0%,
-            rgba(0,0,0,0.7) 40%,
-            rgba(0,0,0,0.3) 75%
-        ),
-        linear-gradient(
-            to top,
-            rgba(0,0,0,0.6),
-            transparent 60%
-        );
+    background: radial-gradient(circle at 60% 40%, rgba(180,240,0,0.15), transparent 60%),
+                linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.95));
     z-index: 1;
 }
 
-
-
-
-.hero-content {
+.hero-container-ultra {
     position: relative;
     z-index: 2;
-    max-width: 800px;
+    max-width: 1100px;
+    width: 100%;
 }
 
-.hero-title {
-    font-size: clamp(34px, 5vw, 64px);
-    letter-spacing: -1px;
-    font-weight: 800;
-    line-height: 1.2;
-    color: #fff;
+.hero-content-ultra {
+    text-align: center;
+    max-width: 820px;
+    margin: 0 auto;
 }
 
-.hero-title span {
+/* Badge */
+.hero-badge-ultra {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid rgba(180,240,0,0.4);
+    border-radius: 50px;
     color: #b4f000;
-    text-shadow: 0 0 20px rgba(180, 240, 0, 0.4);
+    font-size: 14px;
+    margin-bottom: 30px;
+    background: rgba(180,240,0,0.08);
 }
 
-.hero-subtitle {
-    font-size: 17px;
+/* Título */
+.hero-title-ultra {
+    font-size: clamp(38px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.15;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.hero-title-ultra span {
+    color: #b4f000;
+    text-shadow: 0 0 20px rgba(180,240,0,0.6);
+}
+
+/* Sub */
+.hero-subtitle-ultra {
+    font-size: 18px;
     color: rgba(255,255,255,0.75);
     line-height: 1.6;
-    max-width: 600px;
-    margin: 20px auto 0;
+    margin-bottom: 40px;
 }
 
-.hero-buttons {
-    margin-top: 40px;
+/* Botões */
+.hero-buttons-ultra {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
+    margin-bottom: 60px;
 }
+
+.btn-primary-ultra {
+    padding: 16px 34px;
+    border-radius: 40px;
+    background: linear-gradient(135deg, #b4f000, #7ddc00);
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 15px 40px rgba(180,240,0,0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-primary-ultra:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(180,240,0,0.6);
+}
+
+.btn-secondary-ultra {
+    padding: 16px 34px;
+    border-radius: 40px;
+    border: 1px solid rgba(255,255,255,0.2);
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-secondary-ultra:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+/* Stats mais modernas */
+.hero-stats-ultra {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    text-align: center;
+}
+
+.stat-box strong {
+    font-size: 36px;
+    color: #b4f000;
+    display: block;
+}
+
+.stat-box span {
+    font-size: 14px;
+    color: rgba(255,255,255,0.6);
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-
-    .hero-premium::after {
-        background: linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.9) 0%,
-            rgba(0,0,0,0.85) 50%,
-            rgba(0,0,0,0.8) 100%
-        );
+    .hero-ultra {
+        padding: 100px 20px 60px;
     }
 
-    .hero-title {
-        font-size: 30px;
+    .hero-title-ultra {
+        font-size: 32px;
     }
 
-    .hero-subtitle {
-        font-size: 15px;
-    }
-
-    .hero-buttons {
-        gap: 15px;
+    .hero-stats-ultra {
+        gap: 25px;
     }
 }
-
-
 </style>
-
 
     
        <!-- Scrolling Ticker Section Start -->
