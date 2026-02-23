@@ -52,9 +52,91 @@
 			<nav style="padding: 0 !important;" class="navbar navbar-expand-lg">
 				<div class="container">
 					<!-- Logo Start -->
-		<a class="navbar-brand" href="#">
-    <span class="brand-text">Hard<span class="brand-accent">Tech</span></span>
+		<a class="navbar-brand logo-img" href="#">
+    <img src="images/logo03.png" alt="">
 </a>
+
+<style>
+
+/* HEADER BASE */
+.main-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Remove qualquer padding vertical extra */
+.main-header .navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+/* Logo container */
+.logo-img {
+    display: flex;
+    align-items: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* LOGO 4D PREMIUM */
+.logo-img img {
+    height: 140px;
+    width: auto;
+    position: relative;
+    z-index: 10;
+
+    /* Glow verde mais forte */
+    filter: 
+        drop-shadow(0 0 8px rgba(173,255,0,0.8))
+        drop-shadow(0 0 20px rgba(173,255,0,0.6))
+        drop-shadow(0 0 35px rgba(173,255,0,0.4));
+
+    transition: all 0.4s ease;
+}
+
+/* Micro efeito premium ao passar mouse */
+.logo-img img:hover {
+    transform: scale(1.05);
+    filter: 
+        drop-shadow(0 0 10px rgba(173,255,0,1))
+        drop-shadow(0 0 30px rgba(173,255,0,0.8))
+        drop-shadow(0 0 50px rgba(173,255,0,0.6));
+}
+
+/* Garante que nada corte a logo */
+.header-sticky,
+.navbar,
+.main-header {
+    overflow: visible !important;
+}
+
+
+.logo-img img {
+    animation: logoFloat 4s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0px); }
+}
+
+.logo-img::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba(173,255,0,0.15) 0%, transparent 70%);
+    z-index: 0;
+    left: -20px;
+    top: -20px;
+}
+</style>
 
 
   
