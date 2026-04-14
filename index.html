@@ -1,1851 +1,717 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
-<!-- Mirrored from html.awaikenthemes.com/artistic/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 19:02:48 GMT -->
+<html lang="pt-BR">
 <head>
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="Awaiken">
-	<!-- Page Title -->
-    <title>HardTech</title>
-	<!-- Favicon Icon -->
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
-	<!-- Google Fonts Css-->
-	<link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@200..800&amp;display=swap" rel="stylesheet">
-	<!-- Bootstrap Css -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- SlickNav Css -->
-	<link href="css/slicknav.min.css" rel="stylesheet">
-	<!-- Swiper Css -->
-	<link rel="stylesheet" href="css/swiper-bundle.min.css">
-	<!-- Font Awesome Icon Css-->
-	<link href="css/all.css" rel="stylesheet" media="screen">
-	<!-- Animated Css -->
-	<link href="css/animate.css" rel="stylesheet">
-    <!-- Magnific Popup Core Css File -->
-	<link rel="stylesheet" href="css/magnific-popup.css">
-	<!-- Mouse Cursor Css File -->
-	<link rel="stylesheet" href="css/mousecursor.css">
-	<!-- Main Custom Css -->
-	<link href="css/custom.css" rel="stylesheet" media="screen">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="HardTech - Marketing + Tecnologia para Negócios Locais. Sites, Sistemas, Apps, Tráfego Pago e SEO.">
+  <meta name="theme-color" content="#ffffff">
+  <title>HardTech | Marketing + Tecnologia para Negócios Locais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Preloader Start -->
-	<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/loader.svg" alt=""></div>
-		</div>
-	</div>
-	<!-- Preloader End -->
+<nav class="navbar" id="navbar">
+  <div class="container navbar-content">
+    <a href="#" class="logo" aria-label="HardTech Home">
+      <div class="logo-symbol">
+        <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" alt="" class="logo-img">
+      </div>
+      <span class="logo-text">HardTech</span>
+    </a>
+    
+    <div class="nav-links" id="navLinks">
+      <a href="#servicos" class="nav-link">Serviços</a>
+      <a href="#portfolio" class="nav-link">Portfólio</a>
+      <a href="#planos" class="nav-link">Planos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+      <a href="https://wa.me/5514998231397" class="nav-link mobile-only-link">Falar com Especialista</a>
+    </div>
 
-<!-- Header Start -->
-<header class="main-header">
-<div class="header-sticky">
+    <div class="nav-actions">
+      <a href="https://wa.me/5514998231397" target="_blank" class="btn-nav-cta">
+        Falar com Especialista
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4.5M9.5 2.5V7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
 
-<nav class="navbar navbar-expand-lg" style="padding:0!important;">
-<div class="container">
-
-<!-- Logo -->
-<a class="navbar-brand logo-img" href="#">
-<img src="images/logo03.png" alt="HardTech">
-</a>
-
-<!-- Toggle -->
-<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<!-- MENU -->
-<div class="collapse navbar-collapse main-menu" id="mainMenu">
-
-<ul class="navbar-nav ms-auto" id="menu">
-
-<li class="nav-item">
-<a class="nav-link" href="index.html">Início</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="about.html">Sobre Nós</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="services.html">Serviços</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="#porti">Projetos</a>
-</li>
-
-</ul>
-
-</div>
-
-</div>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
 </nav>
 
-</div>
-</header>
-<div class="menu-overlay"></div>
-<!-- Header End -->
-<style>
 
-/* HEADER */
-
-.main-header{
-position:absolute;
-top:0;
-width:100%;
-z-index:1000;
-}
-
-.main-header .navbar{
-min-height:90px;
-display:flex;
-align-items:center;
-}
-
-/* LOGO */
-
-.logo-img{
-display:flex;
-align-items:center;
-position:relative;
-}
-
-.logo-img img{
-
-height:110px;
-width:auto;
-
-filter:
-drop-shadow(0 0 8px rgba(173,255,0,.8))
-drop-shadow(0 0 20px rgba(173,255,0,.6))
-drop-shadow(0 0 35px rgba(173,255,0,.4));
-
-transition:.4s;
-animation:logoFloat 4s ease-in-out infinite;
-}
-
-.logo-img img:hover{
-transform:scale(1.05);
-}
-
-@keyframes logoFloat{
-0%{transform:translateY(0)}
-50%{transform:translateY(-4px)}
-100%{transform:translateY(0)}
-}
-
-/* NAV LINKS */
-
-.navbar-nav .nav-link{
-color:#fff;
-font-weight:500;
-margin-left:28px;
-transition:.3s;
-}
-
-.navbar-nav .nav-link:hover{
-color:#adff00;
-}
-
-/* TOGGLE */
-
-.navbar-toggler{
-border:1px solid rgba(255,255,255,.25);
-padding:7px 11px;
-border-radius:8px;
-background:rgba(0,0,0,.4);
-backdrop-filter:blur(8px);
-}
-
-.navbar-toggler:focus{
-box-shadow:none;
-}
-
-.navbar-toggler-icon{
-filter:invert(1);
-}
-
-/* MOBILE HEADER */
-
-@media(max-width:991px){
-
-.logo-img img{
-height:75px!important;
-}
-
-.main-header .navbar{
-min-height:70px!important;
-padding:10px 0;
-}
-
-/* MENU MOBILE (NOVO) */
-
-.main-menu{
-
-position:absolute;
-top:70px;
-right:15px;
-
-width:220px;
-
-background:rgba(0,0,0,.92);
-padding:18px;
-
-border-radius:14px;
-
-backdrop-filter:blur(10px);
-
-box-shadow:
-0 20px 60px rgba(0,0,0,.7),
-0 0 20px rgba(173,255,0,.15);
-
-}
-
-/* LISTA */
-
-.navbar-nav{
-text-align:left;
-flex-direction:column;
-}
-
-/* LINKS */
-
-.navbar-nav .nav-link{
-
-margin:4px 0;
-padding:10px 12px;
-
-font-size:15px;
-
-border-radius:8px;
-
-transition:.25s;
-
-}
-
-.navbar-nav .nav-link:hover{
-
-background:rgba(173,255,0,.1);
-color:#adff00;
-
-}
-
-}
-
-</style>
-<script>
-
-const toggle = document.querySelector(".navbar-toggler");
-const menu = document.querySelector(".main-menu");
-const overlay = document.querySelector(".menu-overlay");
-
-toggle.addEventListener("click", () => {
-
-menu.classList.toggle("show");
-overlay.classList.toggle("active");
-
-});
-
-overlay.addEventListener("click", () => {
-
-menu.classList.remove("show");
-overlay.classList.remove("active");
-
-});
-
-</script>
-<!-- HERO -->
-<div class="hero-final">
-
-<div class="hero-bg-final">
-<img src="images/hero3.png" alt="Crescimento Digital">
-</div>
-
-<div class="hero-overlay-final"></div>
-
-<div class="hero-container-final">
-
-<div class="hero-content-final">
-
-<div class="hero-badge-final">
-🚀 Consultoria Estratégica para Empresas Locais
-</div>
-
-<h1 class="hero-title-final">
-Estrutura Digital com <span>SEO Local Estratégico</span>.
-Transformamos pesquisas no Google em clientes reais no seu WhatsApp.
-</h1>
-
-<p class="hero-subtitle-final">
-Implementamos uma estrutura completa para empresas locais serem encontradas, escolhidas e contatadas todos os dias.
-</p>
-
-<div class="hero-buttons-final">
-
-<a href="https://wa.me/5514998231397?text=Olá, quero mais clientes pelo Google"
-class="btn-primary-final"
-target="_blank">
-
-Quero Analisar Meu Posicionamento
-
-</a>
-
-<a href="#porti" class="btn-secondary-final">
-Ver Como Funciona
-</a>
-
-</div>
-
-<div class="hero-stats-final">
-
-<div class="stat-box-final">
-<strong>+50</strong>
-<span>Empresas Estruturadas</span>
-</div>
-
-<div class="stat-box-final">
-<strong>3x</strong>
-<span>Aumento Médio em Contatos</span>
-</div>
-
-<div class="stat-box-final">
-<strong>100%</strong>
-<span>Foco em Conversão</span>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<style>
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
-
-:root{
---bg:#000;
---accent:#adff00;
---accent-glow:rgba(173,255,0,.5);
---border:rgba(255,255,255,.15);
-}
-
-/* HERO */
-
-.hero-final{
-position:relative;
-min-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-background:var(--bg);
-padding:100px 24px 60px;
-overflow:hidden;
-font-family:'Inter',sans-serif;
-}
-
-/* BACKGROUND */
-
-.hero-bg-final{
-position:absolute;
-inset:0;
-z-index:0;
-}
-
-.hero-bg-final img{
-width:100%;
-height:100%;
-object-fit:cover;
-opacity:.6;
-filter:saturate(1.2) brightness(.7);
-}
-
-/* OVERLAY */
-
-.hero-overlay-final{
-position:absolute;
-inset:0;
-z-index:1;
-
-background:linear-gradient(
-to bottom,
-rgba(0,0,0,.85)0%,
-rgba(0,0,0,.5)40%,
-rgba(0,0,0,.5)60%,
-rgba(0,0,0,.9)100%
-);
-}
-
-.hero-container-final{
-position:relative;
-z-index:10;
-max-width:1100px;
-width:100%;
-}
-
-.hero-content-final{
-text-align:center;
-}
-
-/* BADGE */
-
-.hero-badge-final{
-
-display:inline-flex;
-align-items:center;
-
-padding:10px 20px;
-
-background:rgba(0,0,0,.6);
-
-border:1px solid var(--accent);
-border-radius:100px;
-
-color:var(--accent);
-
-font-size:14px;
-font-weight:600;
-
-margin-bottom:24px;
-
-backdrop-filter:blur(8px);
-}
-
-/* TITLE */
-
-.hero-title-final{
-
-font-size:clamp(30px,5vw,60px);
-font-weight:800;
-
-line-height:1.15;
-letter-spacing:-.02em;
-
-color:#fff;
-
-margin-bottom:20px;
-
-text-shadow:0 4px 15px rgba(0,0,0,.5);
-}
-
-.hero-title-final span{
-color:var(--accent);
-text-shadow:0 0 30px rgba(173,255,0,.6);
-}
-
-/* SUBTITLE */
-
-.hero-subtitle-final{
-
-font-size:clamp(15px,2vw,19px);
-
-color:#f0f0f0;
-
-max-width:720px;
-
-margin:0 auto 36px;
-
-line-height:1.6;
-
-text-shadow:0 2px 10px rgba(0,0,0,.8);
-}
-
-/* BUTTONS */
-
-.hero-buttons-final{
-display:flex;
-gap:18px;
-justify-content:center;
-flex-wrap:wrap;
-margin-bottom:50px;
-}
-
-.btn-primary-final{
-
-padding:16px 32px;
-
-background:var(--accent);
-
-color:#000;
-
-border-radius:100px;
-
-font-weight:800;
-
-text-decoration:none;
-
-font-size:16px;
-
-box-shadow:0 15px 40px var(--accent-glow);
-
-transition:.3s;
-}
-
-.btn-primary-final:hover{
-transform:scale(1.05) translateY(-3px);
-}
-
-.btn-secondary-final{
-
-padding:16px 30px;
-
-background:rgba(255,255,255,.05);
-
-color:#fff;
-
-border:1px solid var(--border);
-
-border-radius:100px;
-
-font-weight:600;
-
-text-decoration:none;
-
-font-size:15px;
-
-backdrop-filter:blur(10px);
-}
-
-/* STATS */
-
-.hero-stats-final{
-display:flex;
-justify-content:center;
-gap:40px;
-flex-wrap:wrap;
-}
-
-.stat-box-final strong{
-font-size:34px;
-font-weight:800;
-color:#fff;
-display:block;
-}
-
-.stat-box-final span{
-font-size:12px;
-color:var(--accent);
-letter-spacing:1.5px;
-text-transform:uppercase;
-font-weight:700;
-}
-
-/* MOBILE */
-
-@media(max-width:768px){
-
-.hero-final{
-min-height:auto;
-padding:95px 18px 45px;
-}
-
-.hero-badge-final{
-font-size:12px;
-padding:8px 16px;
-margin-bottom:18px;
-}
-
-.hero-title-final{
-font-size:26px;
-line-height:1.25;
-}
-
-.hero-subtitle-final{
-font-size:14px;
-margin-bottom:26px;
-}
-
-.hero-buttons-final{
-flex-direction:column;
-gap:12px;
-}
-
-.btn-primary-final,
-.btn-secondary-final{
-width:100%;
-text-align:center;
-padding:14px 20px;
-font-size:15px;
-}
-
-.hero-stats-final{
-flex-direction:column;
-gap:20px;
-}
-
-.stat-box-final strong{
-font-size:24px;
-}
-
-.stat-box-final span{
-font-size:11px;
-}
-
-}
-
-</style>
-      
-        <div class="our-scrolling-ticker subpages-scrolling-ticker">
-            <div class="scrolling-ticker-box">
-
-                <div class="scrolling-content">
-                    <span><img src="images/asterisk-icon.svg" alt="">Sites Profissionais que Vendem</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Sistemas Web Sob Medida</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">SEO para Aparecer no Google</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Google Meu Negócio Otimizado</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Tráfego Pago com Foco em Resultado</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Landing Pages de Alta Conversão</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Automação para Escalar seu Negócio</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Presença Digital Estratégica</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Relatórios e Análises de Performance</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Posicionamento Digital de Autoridade</span>
-                </div>
-
-                <div class="scrolling-content">
-                    <span><img src="images/asterisk-icon.svg" alt="">Sites Profissionais que Vendem</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Sistemas Web Sob Medida</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">SEO para Aparecer no Google</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Google Meu Negócio Otimizado</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Tráfego Pago com Foco em Resultado</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Landing Pages de Alta Conversão</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Automação para Escalar seu Negócio</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Presença Digital Estratégica</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Relatórios e Análises de Performance</span>
-                    <span><img src="images/asterisk-icon.svg" alt="">Posicionamento Digital de Autoridade</span>
-                </div>
-
-            </div>
-
+<section class="hero">
+  <div class="container hero-content">
+
+    <div class="hero-text">
+      <span class="badge">Especialistas em Visibilidade Online</span>
+
+      <h1 class="hero-title">
+        Apareça no <span class="text-gradient">Google</span> e Receba Mais <span class="text-gradient">Clientes</span> Todos os Dias
+      </h1>
+
+      <p class="hero-description">
+        Ajudamos sua empresa a ficar visível no Google e nas redes sociais para atrair clientes qualificados. Mais de 500 empresas já cresceram com a gente.
+      </p>
+
+      <ul class="hero-features">
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Primeira página do Google
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Mais clientes qualificados
+        </li>
+        <li>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+          Resultados em 30 dias
+        </li>
+      </ul>
+
+      <div class="hero-buttons">
+        <a href="#planos" class="btn btn-primary btn-lg">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+          </svg>
+          Quero Aparecer no Google
+        </a>
+
+        <a href="https://wa.me/5514998231397" target="_blank" class="btn btn-outline btn-lg">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+            <path d="..."></path>
+          </svg>
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+    <!-- 🔥 GANCHO (POSIÇÃO CORRETA) -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+        <path d="m6 9 6 6 6-6"></path>
+      </svg>
+    </div>
+
+    <div class="hero-visual">
+      <div class="google-mockup">
+        <div class="browser-bar">
+          <div class="browser-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="browser-url">google.com.br/search</div>
         </div>
-      
- <div class="about-agency">
+
+        <div class="search-box">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <span style="color: white; font-weight: bold;">clínica dentista [sua cidade]</span>
+        </div>
+
+        <div class="search-results">
+          <div class="search-result featured">
+            <div class="result-badge">1º no Google</div>
+            <div class="result-url"><span style="color: white; font-weight: bold;">suaempresa.com.br</span></div>
+            <div class="result-title">Sua Empresa - Clínica Odontológica</div>
+            <div class="result-desc">A melhor clínica da região...</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="floating-card card-1">
+        <span class="card-number">+340%</span>
+        <span class="card-label">mais visitas</span>
+      </div>
+
+      <div class="floating-card card-2">
+        <span class="card-number">3.2x</span>
+        <span class="card-label">ROI médio</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Services Section -->
+  <section class="services" id="servicos">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="about-agency-content">
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">sobre nós</h3>
-                       <h2 class="text-anime-style-2">
-                    Estruturamos empresas locais para serem <span>encontradas, escolhidas e contatadas</span>.
-                    </h2>
-                    </div>
-
-                         <p>
-                        A HardTech é uma consultoria estratégica focada em posicionamento digital para empresas locais.
-                        Não entregamos apenas sites ou perfis no Google — implementamos uma estrutura completa
-                        para gerar mais contatos, agendamentos e vendas de forma previsível.
-                        </p>
-
-                    <div class="section-btn wow fadeInUp" data-wow-delay="0.25s">
-                        <a href="about.html" class="btn-default">Entender Nossa Estrutura</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-6">
-                <div class="about-agency-list">
-
-                    <div class="about-agency-item wow fadeInUp">
-                        <div class="icon-box">
-                            <img src="images/icon-about-agency-1.svg" alt="">
-                        </div>
-                        <div class="agency-item-content">
-                            <h3>Aumento estruturado de contatos</h3>
-                            <p>
-                                Organizamos sua presença digital para que sua empresa receba
-                                mais mensagens, ligações e solicitações de orçamento diariamente.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="about-agency-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="icon-box">
-                            <img src="images/icon-about-agency-2.svg" alt="">
-                        </div>
-                        <div class="agency-item-content">
-                            <h3>SEO Local aplicado com método</h3>
-                            <p>
-                                Aplicamos otimizações técnicas no Google para posicionar sua empresa
-                                antes dos concorrentes na sua região.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="about-agency-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="icon-box">
-                            <img src="images/icon-about-agency-3.svg" alt="">
-                        </div>
-                        <div class="agency-item-content">
-                            <h3>Construção de autoridade digital</h3>
-                            <p>
-                                Criamos páginas e perfis profissionais que aumentam a confiança
-                                do cliente antes mesmo do primeiro contato.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="about-agency-item wow fadeInUp" data-wow-delay="0.6s">
-                        <div class="icon-box">
-                            <img src="images/icon-about-agency-4.svg" alt="">
-                        </div>
-                        <div class="agency-item-content">
-                            <h3>Foco em retorno financeiro</h3>
-                            <p>
-                                Cada elemento é planejado para gerar resultado real,
-                                não apenas estética ou presença online.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+      <div class="section-header">
+        <h2 class="section-title">
+          Tudo o que seu negócio <span class="text-gradient">precisa para crescer</span>
+        </h2>
+        <p class="section-description">
+          Soluções completas de tecnologia e marketing digital para empresas que querem resultados reais.
+        </p>
+      </div>
+      <div class="services-list">
+        <a href="#contato" class="service-item">
+          <div class="service-number">01</div>
+          <div class="service-content">
+            <h3 class="service-title">Sites e Sistemas</h3>
+            <p class="service-desc">Criamos experiências digitais que convertem visitantes em clientes.</p>
+          </div>
+          <div class="service-features">
+            <span>Sites institucionais</span>
+            <span>Lojas virtuais</span>
+            <span>Sistemas web</span>
+            <span>Apps mobile</span>
+          </div>
+          <div class="service-stats">
+            <span class="stat-value">200+</span>
+            <span class="stat-label">Projetos entregues</span>
+          </div>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="m5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </a>
+        <a href="#contato" class="service-item">
+          <div class="service-number">02</div>
+          <div class="service-content">
+            <h3 class="service-title">Anúncios Online</h3>
+            <p class="service-desc">Suas campanhas gerenciadas por especialistas certificados.</p>
+          </div>
+          <div class="service-features">
+            <span>Google Ads</span>
+            <span>Meta Ads</span>
+            <span>Remarketing</span>
+            <span>Relatórios</span>
+          </div>
+          <div class="service-stats">
+            <span class="stat-value">R$ 2M+</span>
+            <span class="stat-label">Em mídia gerenciada</span>
+          </div>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="m5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </a>
+        <a href="#contato" class="service-item">
+          <div class="service-number">03</div>
+          <div class="service-content">
+            <h3 class="service-title">Aparecer no Google</h3>
+            <p class="service-desc">Posicionamos seu negócio no topo das buscas da sua região.</p>
+          </div>
+          <div class="service-features">
+            <span>Google Meu Negócio</span>
+            <span>SEO técnico</span>
+            <span>Conteúdo otimizado</span>
+            <span>Link building</span>
+          </div>
+          <div class="service-stats">
+            <span class="stat-value">150+</span>
+            <span class="stat-label">Clientes no topo</span>
+          </div>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="m5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </a>
+        <a href="#contato" class="service-item">
+          <div class="service-number">04</div>
+          <div class="service-content">
+            <h3 class="service-title">Redes Sociais</h3>
+            <p class="service-desc">Sua marca presente e relevante onde seu público está.</p>
+          </div>
+          <div class="service-features">
+            <span>Criação de conteúdo</span>
+            <span>Gestão de perfis</span>
+            <span>Estratégia</span>
+            <span>Engajamento</span>
+          </div>
+          <div class="service-stats">
+            <span class="stat-value">500K+</span>
+            <span class="stat-label">Seguidores gerados</span>
+          </div>
+          <div class="service-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+              <path d="m5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </div>
+        </a>
+      </div>
     </div>
-</div>
+  </section>
 
-    <div class="our-services">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-7">
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">nossa estrutura</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Os 3 pilares da <span>Estrutura HardTech</span></h2>
-                    </div>
-                    </div>
-
-                <div class="col-lg-5">
-                    <div class="section-content-btn">
-                        <div class="section-title-content wow fadeInUp" data-wow-delay="0.2s">
-                           <p>
-                            Aplicamos uma estrutura integrada para posicionar, converter e escalar
-                            empresas locais através do Google.
-                            </p>
-                        </div>
-                        <div class="section-btn wow fadeInUp" data-wow-delay="0.4s">
-                            <a href="services.html" class="btn-default">todos os serviços</a>
-                        </div>
-                        </div>   
-                    </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item wow fadeInUp">
-                        <div class="service-item-header">
-                            <div class="icon-box">
-                                <img src="images/icon-service-1.svg" alt="">
-                            </div>
-
-                            <div class="service-arrow">
-                                <a href="#><img src="images/arrow-accent.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="service-item-body">
-                            <h3>1. Posicionamento Estratégico</h3>
-                            <p>
-                            Otimização do Google Meu Negócio e aplicação de SEO Local
-                            para colocar sua empresa entre as primeiras posições na sua cidade.
-                        </p>
-                        </div>
-                        </div>
-                    </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-item-header">
-                            <div class="icon-box">
-                                <img src="images/icon-service-2.svg" alt="">
-                            </div>
-
-                            <div class="service-arrow">
-                                <a href="#><img src="images/arrow-accent.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="service-item-body">
-                            <h3>2. Página de Conversão</h3>
-                             <p>
-                            Desenvolvemos uma landing page estruturada para transformar
-                            visitas em mensagens, pedidos e agendamentos.
-                        </p>
-                        </div>
-                        </div>
-                    </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-item-header">
-                            <div class="icon-box">
-                                <img src="images/icon-service-3.svg" alt="">
-                            </div>
-
-                            <div class="service-arrow">
-                               <a href="#"><img src="images/arrow-accent.svg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="service-item-body">
-                            <h3>3. Sistema de Contato e Fechamento</h3>
-                             <p>
-                            Organizamos WhatsApp, Google e redes sociais para
-                            aumentar autoridade e facilitar o fechamento de novos clientes.
-                        </p>
-                        </div>
-                        </div>
-                    </div>
-
-                <div class="col-lg-12">
-                <div class="service-footer">
-                    <p>
-                        Quer receber mais clientes?
-                        <a href="https://wa.me/5514998231397?text=Ol%C3%A1%2C%20quero%20uma%20an%C3%A1lise%20gratuita" target="_blank">
-                            Solicitar análise gratuita
-                        </a>
-                    </p>
-                </div>
-                </div>
-            </div>
-        </div>
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Nossos trabalhos</span>
+      <h2 class="section-title">Projetos que entregamos</h2>
+      <p class="section-description">Veja alguns dos negócios que ajudamos a crescer no digital.</p>
     </div>
-
-        <div class="digital-success">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="digital-success-box">
-
-                            <!-- LADO ESQUERDO (título + números) -->
-                            <div class="digital-success-content">
-                                <div class="section-title">
-                                    <h2 class="text-anime-style-2">
-                                        Presença digital estruturada para <span>gerar demanda local</span>
-                                    </h2>
-                                </div>
-
-                                <div class="success-counter-box">
-                                    <div class="success-counter-item">
-                                        <h2>+<span class="counter">60</span>%</h2>
-                                        <p>Mais visibilidade no Google com otimização estratégica.</p>
-                                    </div>
-
-                                    <div class="success-counter-item">
-                                        <h2>+<span class="counter">30</span>%</h2>
-                                        <p>Mais contatos quando visitas viram mensagens no WhatsApp.</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- LADO DIREITO (lista) -->
-                            <div class="digital-success-list">
-                                <div class="success-list-item wow fadeInUp">
-                                    <p>
-                                        <span>Posicionamento Local:</span>
-                                        sua empresa aparece quando o cliente pesquisa na sua cidade.
-                                    </p>
-                                </div>
-
-                                <div class="success-list-item wow fadeInUp" data-wow-delay="0.25s">
-                                    <p>
-                                        <span>Landing Page Estratégica:</span>
-                                        feita para transformar cliques em pedidos e orçamentos no WhatsApp.
-                                    </p>
-                                </div>
-
-                                <div class="success-list-item wow fadeInUp" data-wow-delay="0.5s">
-                                    <p>
-                                        <span>Estratégia Aplicável:</span>
-                                        você recebe um passo a passo para continuar atraindo clientes após a entrega.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<div id="porti" class="our-portfolio">
-    <div class="container">
-        <div class="row section-row align-items-center">
-            <div class="col-lg-7">
-                <div class="section-title">
-                    <h3 class="wow fadeInUp">portfólio</h3>
-                    <h2 class="text-anime-style-2" data-cursor="-opaque">
-                        Projetos com <span>design moderno e alta performance</span>
-                    </h2>
-                </div>
-            </div>
-
-            <div class="col-lg-5">
-                <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
-                    <p>
-                        Desenvolvemos sites estratégicos e soluções digitais que fortalecem marcas, 
-                        aumentam a presença online e geram resultados reais.
-                    </p>
-                </div>        
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-12 col-md-12">
-                <div class="our-Project-nav wow fadeInUp" data-wow-delay="0.25s">
-                    <ul>
-                        <li><a href="#" class="active-btn" data-filter="*">todos</a></li>
-                        <li><a href="#" data-filter=".branding">Identidade Visual</a></li>
-                        <li><a href="#" data-filter=".web">Sites Institucionais</a></li>
-                        <li><a href="#" data-filter=".digital">Marketing Digital</a></li>
-                        <li><a href="#" data-filter=".analytics">SEO & Performance</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="col-lg-12">
-                <div class="row project-item-boxes align-items-center">
-
-                    <div class="col-lg-4 col-md-6 project-item-box web">
-                        <div class="project-item wow fadeInUp">
-                            <div class="project-image">
-                                <figure class="image-anime">
-                                    <img src="images/teste.png" alt="">
-                                </figure>
-                                <div class="project-tag">
-                                    <a style="color: black;" href="#">DASHBOARD</a>
-                                </div>   
-                            </div>                                                           
-                            <div class="project-content">
-                                <h3>Sistema Agendamento</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 project-item-box web">
-                        <div class="project-item wow fadeInUp">
-                            <div class="project-image">
-                                <figure class="image-anime">
-                                    <img src="images/unique.png" alt="">
-                                </figure>
-                                <div class="project-tag">
-                                    <a style="color: black;" href="#">Institucional</a>
-                                </div>   
-                            </div>                                                           
-                            <div class="project-content">
-                                <h3>Unique - Instituto de Cirurgia</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 project-item-box analytics">
-                        <div class="project-item wow fadeInUp">
-                            <div class="project-image">
-                                <figure class="image-anime">
-                                    <img src="images/moraes.png" alt="">
-                                </figure>
-                                <div class="project-tag">
-                                    <a style="color: black;" href="#">seo & performance</a>
-                                </div>   
-                            </div>                                                           
-                            <div class="project-content">
-                                <h3>Projeto de Otimização SEO</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 project-item-box branding">
-                        <div class="project-item wow fadeInUp">
-                            <div class="project-image">
-                                <figure class="image-anime">
-                                    <img src="images/razze.png" alt="">
-                                </figure>
-                                <div class="project-tag">
-                                    <a href="#">identidade visual</a>
-                                </div>   
-                            </div>                                                           
-                            <div class="project-content">
-                                <h3>Criação de Marca Digital</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 project-item-box digital">
-                        <div class="project-item wow fadeInUp">
-                            <div class="project-image">
-                                <figure class="image-anime">
-                                    <img src="images/cookie.png" alt="">
-                                </figure>
-                                <div class="project-tag">
-                                    <a href="#">landing page</a>
-                                </div>   
-                            </div>                                                           
-                            <div class="project-content">
-                                <h3>Landing Page de Alta Conversão</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 project-item-box web">
-                        <div class="project-item wow fadeInUp">
-                            <div class="project-image">
-                                <figure class="image-anime">
-                                    <img src="images/bruna.png" alt="">
-                                </figure>
-                                <div class="project-tag">
-                                    <a href="#">redesign</a>
-                                </div>   
-                            </div>                                                           
-                            <div class="project-content">
-                                <h3>Redesign Completo de Website</h3>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-        <div class="why-choose-us">
-            <div class="container">
-                <div class="row section-row align-items-center">
-                    <div class="col-lg-7">
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">por que a hardtech</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">
-                                Consultoria com <span>estrutura e direcionamento</span> para empresas locais
-                            </h2>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5">
-                        <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
-                           <p>
-                            A HardTech trabalha com método estruturado de posicionamento digital.
-                            Cada projeto é pensado para gerar previsibilidade de contatos,
-                            não apenas presença online.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row align-items-center">
-                    <div class="col-lg-6">
-                        <div class="why-choose-content">
-
-                            <div class="why-choose-item active wow fadeInUp">
-                                <h3>Método orientado a conversão</h3>
-                                <p>
-                                Aplicamos uma estrutura clara: posicionamento, página estratégica
-                                e organização de contato para gerar clientes de forma consistente.
-                                </p>
-                            </div>
-
-                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.25s">
-                              <h3>Implementação prática</h3>
-                                <p>
-                                Você recebe não apenas o projeto entregue, mas direcionamento
-                                para manter e evoluir sua presença digital após a implementação.
-                                </p>
-                            </div>
-
-                            <div class="why-choose-item wow fadeInUp" data-wow-delay="0.5s">
-                               <h3>Clareza e acompanhamento</h3>
-                                <p>
-                                Trabalhamos com metas definidas e visão estratégica,
-                                para que você saiba exatamente o que está sendo aplicado
-                                e qual o objetivo de cada etapa.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                        <div class="why-choose-image">
-                            <figure class="image-anime reveal">
-                                <img src="images/logo03.png" alt="HardTech Posicionamento Digital">
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-   
-
-
-<div class="how-it-work">
-    <div class="container">
-        <div class="row section-row align-items-center">
-            <div class="col-lg-7">
-                <div class="section-title">
-                    <h3 class="wow fadeInUp">metodologia hardtech</h3>
-                    <h2 class="text-anime-style-2">
-                    Aplicamos um método estruturado para <span>posicionar e converter</span>
-                    empresas locais
-                    </h2>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
-                  <p>
-                Seguimos um processo claro em três etapas:
-                análise estratégica, implementação da estrutura
-                e ativação com direcionamento contínuo.
-                </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <!-- ETAPA 01 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="work-process-item wow fadeInUp">
-                    <div class="work-process-header">
-                        <div class="work-process-title">
-                            <h3>Diagnóstico Estratégico</h3>
-                        </div>
-                        <div class="work-process-btn">
-                            <a href="#" class="readmore-btn">
-                                <img src="images/arrow-white.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="work-process-content">
-                      <p>
-                        Realizamos uma análise técnica do seu posicionamento atual,
-                        avaliamos concorrência local e identificamos oportunidades reais
-                        de crescimento no Google.
-                        </p>
-                        </div>
-
-                    <div class="work-process-body">
-                        <div class="work-process-no">
-                            <h3>etapa</h3>
-                            <h2>01</h2>
-                        </div>
-                        <div class="work-process-icon-box">
-                            <img src="images/icon-work-process-1.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ETAPA 02 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="work-process-item wow fadeInUp" data-wow-delay="0.25s">
-                    <div class="work-process-header">
-                        <div class="work-process-title">
-                            <h3>Implementação da Estrutura</h3>
-                        </div>
-                        <div class="work-process-btn">
-                            <a href="#" class="readmore-btn">
-                                <img src="images/arrow-white.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="work-process-content">
-                       <p>
-                        Aplicamos SEO Local, desenvolvemos sua página estratégica
-                        e organizamos os canais de contato para maximizar conversão.
-                        </p>
-                    </div>
-
-                    <div class="work-process-body">
-                        <div class="work-process-no">
-                            <h3>etapa</h3>
-                            <h2>02</h2>
-                        </div>
-                        <div class="work-process-icon-box">
-                            <img src="images/icon-work-process-2.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ETAPA 03 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="work-process-item wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="work-process-header">
-                        <div class="work-process-title">
-                            <h3>Ativação e Direcionamento</h3>
-                        </div>
-                        <div class="work-process-btn">
-                            <a href="#" class="readmore-btn">
-                                <img src="images/arrow-white.svg" alt="">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="work-process-content">
-                       <p>
-                        Publicamos a estrutura, realizamos ajustes finais
-                        e orientamos você sobre como manter e evoluir
-                        sua geração de clientes ao longo do tempo.
-                        </p>
-                    </div>
-
-                    <div class="work-process-body">
-                        <div class="work-process-no">
-                            <h3>etapa</h3>
-                            <h2>03</h2>
-                        </div>
-                        <div class="work-process-icon-box">
-                            <img src="images/icon-work-process-3.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-<div class="our-testimonial"> 
-    <div class="container">
-        <div class="row section-row align-items-center">
-            <div class="col-lg-7">
-                <div class="section-title">
-                    <h3 class="wow fadeInUp">empresas atendidas</h3>
-                   <h2 class="text-anime-style-2">
-                    Projetos aplicados com <span>foco em conversão local</span>
-                    </h2>
-                </div>
-            </div>
-
-            <div class="col-lg-5">
-                <div class="section-title-content wow fadeInUp">
-                    <p>
-                        Negócios locais que confiaram no nosso posicionamento digital 
-                        e começaram a receber mais contatos pelo Google e WhatsApp.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row align-items-center">
-            <div class="col-lg-4">
-                <div class="testimonial-review-box">
-                    <div class="testimonial-review-header">
-                        <h2><span class="counter">4.9</span></h2>
-                        <div class="testimonial-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <p>(40+ Avaliações)</p>
-                    </div>
-
-                    <div class="testimonial-review-content">
-                        <h3>Confiança construída com resultado</h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-8">
-                <div class="testimonial-slider">
-                    <div class="swiper">
-                        <div class="swiper-wrapper">
-
-                            <!-- Depoimento 1 -->
-                            <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <div class="testimonial-rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>                                        
-                                    <div class="testimonial-content">
-                                       <p>
-                                        A estrutura digital trouxe mais profissionalismo para nossa empresa.
-                                        Percebemos aumento nos pedidos de orçamento e consultas.
-                                        </p>								
-                                    </div>
-                                    <div class="testimonial-body">
-                                        <div class="author-content">
-                                            <h3>Clínica Odontológica – SP</h3>
-                                            <p>Proprietário</p>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                            </div>
-
-                            <!-- Depoimento 2 -->
-                            <div class="swiper-slide">
-                                <div class="testimonial-item">
-                                    <div class="testimonial-rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>                                        
-                                    <div class="testimonial-content">
-                                       <p>
-                                        Após a implementação do SEO Local e da página estratégica,
-                                        passamos a receber contatos recorrentes pelo WhatsApp.
-                                        Hoje somos encontrados com mais facilidade na nossa região.
-                                        </p>								
-                                    </div>
-                                    <div class="testimonial-body">
-                                        <div class="author-content">
-                                            <h3>Barbearia – Interior SP</h3>
-                                            <p>Empresário</p>
-                                        </div>
-                                    </div>                                    
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-<div class="agency-benefits">
-    <div class="container">
-        <div class="row section-row align-items-center">
-            <div class="col-lg-7">
-                <div class="section-title">
-                    <h3 class="wow fadeInUp">diferencial hardtech</h3>
-                    <h2 class="text-anime-style-2" data-cursor="-opaque">
-                        Estrutura, método e <span>posicionamento estratégico</span>
-                        para empresas locais
-                    </h2>
-                </div>
-            </div>
-
-            <div class="col-lg-5">
-                <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
-                    <p>
-                       Não atuamos apenas como desenvolvedores.
-                        Trabalhamos como consultoria estratégica,
-                        organizando sua presença digital para gerar previsibilidade de contatos.
-                    </p>
-                </div>          
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-lg-3 col-md-6">
-                <div class="benefits-steps-item wow fadeInUp">
-                    <div class="benefits-steps-no">
-                        <h3>01</h3>
-                    </div>
-
-                    <div class="icon-box">
-                        <img src="images/icon-benefits-steps-1.svg" alt="">
-                    </div>
-
-                    <div class="benefits-steps-content">
-                        <h3>Visão estratégica</h3>
-                        <p>
-                           Cada projeto começa com análise e direcionamento,
-                            não apenas execução técnica.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="benefits-steps-item wow fadeInUp" data-wow-delay="0.2s">
-                    <div class="benefits-steps-no">
-                        <h3>02</h3>
-                    </div>
-
-                    <div class="icon-box">
-                        <img src="images/icon-benefits-steps-2.svg" alt="">
-                    </div>
-
-                    <div class="benefits-steps-content">
-                        <h3>Especialização em SEO Local</h3>
-                        <p>
-                            Foco exclusivo em empresas locais que dependem
-                            de buscas regionais para gerar clientes.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="benefits-steps-item wow fadeInUp" data-wow-delay="0.4s">
-                    <div class="benefits-steps-no">
-                        <h3>03</h3>
-                    </div>
-
-                    <div class="icon-box">
-                        <img src="images/icon-benefits-steps-3.svg" alt="">
-                    </div>
-
-                    <div class="benefits-steps-content">
-                        <h3>Implementação organizada</h3>
-                        <p>
-                            Processo claro, etapas definidas e acompanhamento
-                            durante toda a aplicação da estrutura.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6">
-                <div class="benefits-steps-item wow fadeInUp" data-wow-delay="0.6s">
-                    <div class="benefits-steps-no">
-                        <h3>04</h3>
-                    </div>
-
-                    <div class="icon-box">
-                        <img src="images/icon-benefits-steps-4.svg" alt="">
-                    </div>
-
-                    <div class="benefits-steps-content">
-                        <h3>Direcionamento contínuo</h3>
-                        <p>
-                            Você entende o que foi aplicado
-                            e como manter sua geração de clientes ativa.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-
-
-<!-- Botão WhatsApp Flutuante -->
-<a href="https://wa.me/5514998231397?text=Olá,%20quero%20uma%20análise%20gratuita"
-   class="whatsapp-float"
-   target="_blank">
-   <i class="fa-brands fa-whatsapp"></i>
-</a>
-
-<style>
-.whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 25px;
-    right: 25px;
-    background-color: #25D366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s ease;
-}
-
-.whatsapp-float:hover {
-    transform: scale(1.1);
-    background-color: #1ebe5d;
-}
-</style>
-
-
-
-    <!-- Footer Start -->
-        <footer class="main-footer">
-
-            <!-- Let's Work Together start -->
-            <div class="footer-work-together">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="work-together-box">
-
-                              
-   <div class="join-agency">
-    <div class="container">
-        <div class="row section-row align-items-center">
-            <div class="col-lg-7">
-                <div class="section-title">
-                    <h3 class="wow fadeInUp">próximo passo</h3>
-                   
-                </div>
-            </div>
-
-            <div class="col-lg-5">
-                <div class="section-title-content wow fadeInUp" data-wow-delay="0.25s">
-                   <p>
-                    Receba uma análise objetiva do seu posicionamento digital
-                    e descubra oportunidades reais de crescimento no Google.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-lg-4 col-md-6">
-                <div class="agency-social-item wow fadeInUp">
-                    <div class="icon-box">
-                        <a href="https://wa.me/5514998231397" target="_blank">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                    </div>
-                    <div class="agency-social-content">
-                       <h3>Diagnóstico via WhatsApp</h3>
-                    <p>Envie sua empresa e receba uma análise inicial.</p>
-                    </div>
-                    <div class="agency-social-btn">
-                        <a href="https://wa.me/5514998231397" target="_blank" class="readmore-btn">
-                            <img src="images/arrow-white.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="agency-social-item wow fadeInUp" data-wow-delay="0.25s">
-                    <div class="icon-box">
-                        <a href="mailto:contato@hardttechinfo.com.br">
-                            <i class="fa-solid fa-envelope"></i>
-                        </a>
-                    </div>
-                    <div class="agency-social-content">
-                        <h3>Solicitar proposta detalhada</h3>
-                        <p>Receba escopo e estrutura personalizada.</p>
-                    </div>
-                    <div class="agency-social-btn">
-                        <a href="mailto:contato@hardttechinfo.com.br" class="readmore-btn">
-                            <img src="images/arrow-white.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-                <div class="agency-social-item wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="icon-box">
-                        <a href="https://www.instagram.com/har.dtechinfo/" target="_blank">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                    </div>
-                    <div class="agency-social-content">
-                        <h3>Acompanhe nossa metodologia</h3>
-                        <p>@har.dtechinfo</p>
-                    </div>
-                    <div class="agency-social-btn">
-                        
-                        <a href="https://www.instagram.com/har.dtechinfo/" target="_blank" class="readmore-btn">
-                            <img src="images/arrow-white.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div> 
-
-
-                            </div>                        
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Let's Work Together end -->
-
-
-            <div class="footer-main">
-                <div class="container">
-                    <div class="row">
-
-                        <!-- Sobre -->
-                        <div class="col-lg-4 col-md-6">
-                            <div class="about-footer">
-
-
-                                <p style="margin-top:15px;">
-                                    A Hard Tech é uma agência digital especializada em 
-                                    desenvolvimento de sites, sistemas personalizados e 
-                                    posicionamento estratégico no Google.
-                                    Atuamos em Marília/SP e região.
-                                </p>
-
-                                <div class="footer-contact-box">
-
-                                    <div class="footer-contact-item">
-                                        <div class="icon-box">
-                                            <img src="images/icon-phone.svg" alt="">
-                                        </div>
-                                        <div class="footer-contact-content">
-                                            <p>(14) 99823-1397</p>
-                                        </div>
-                                    </div>
-
-                                    <div class="footer-contact-item">
-                                        <div class="icon-box">
-                                            <img src="images/icon-mail.svg" alt="">
-                                        </div>
-                                        <div class="footer-contact-content">
-                                            <p>contato@hardtechinfo.com.br</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Links -->
-                        <!-- <div class="col-lg-2 col-md-3 col-6">
-                            <div class="footer-links">
-                                <h3>Links Rápidos</h3>
-                                <ul>
-                                    <li><a href="index.html">Início</a></li>
-                                    <li><a href="about.html">Sobre</a></li>
-                                    <li><a href="services.html">Serviços</a></li>
-                                    <li><a href="#">Contato</a></li>
-                                </ul>
-                            </div>
-                        </div> -->
-
-                        <!-- Serviços -->
-                        <!-- <div class="col-lg-2 col-md-3 col-6">
-                            <div class="footer-links">
-                                <h3>Serviços</h3>
-                                <ul>
-                                    <li><a href="#">Criação de Sites</a></li>
-                                    <li><a href="#">Sistemas Web</a></li>
-                                    <li><a href="#">SEO Google</a></li>
-                                    <li><a href="#">Google Meu Negócio</a></li>
-                                </ul>
-                            </div>
-                        </div> -->
-
-                        <!-- Newsletter -->
-                        <!-- <div class="col-lg-4">
-                            <div class="footer-newsletter-form">
-                                <h3>Receba Dicas de Crescimento Digital</h3>
-                                <form id="newslettersForm" action="#" method="POST">
-                                    <div class="form-group">
-                                        <input type="email" name="mail" class="form-control" placeholder="Digite seu melhor e-mail" required>
-                                        <button type="submit" class="btn-highlighted">Cadastrar</button>
-                                    </div>
-                                </form>
-                            </div> -->
-
-                            <div class="footer-social-links">
-                                <ul>
-                                    <li><a href="https://www.instagram.com/har.dtechinfo/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                        </div> 
-
-                    </div>
-
-                    <!-- Copyright -->
-                    <div class="footer-copyright">
-                        <div class="row align-items-center">                       
-                            <div class="col-lg-12">
-                                <div class="footer-copyright-text">
-                                    <p>
-                                        © 2026 Hard Tech - Agência Digital em Marília/SP. 
-                                        Todos os direitos reservados.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </footer>
-        <!-- Footer End -->
-
-
- <style>
-
     
-                .logo-navbar {
-    height: 55px;
-    width: auto;
-    display: block;
-}
-.logo-navbar {
-    width: 60px;
-    height: auto;
-}
-@media (max-width: 991px) {
-    .logo-navbar {
-        width: 140px;
-    }
-}
-.navbar {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-}
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="sites">Sites</button>
+      <button class="filter-btn" data-filter="sistemas">Sistemas</button>
+      <button class="filter-btn" data-filter="marketing">Marketing</button>
+      <button class="filter-btn" data-filter="seo">Google</button>
+    </div>
 
-.navbar .container {
-    display: flex;
-    align-items: center;
-}
-.navbar-brand {
-    max-width: none !important;
-}
-              </style>
-<style>
-    .hero-agency {
-    padding: 140px 0 100px;
-    min-height: auto;
-    display: flex;
-    align-items: center;
-    background: #000;
-}
+    <div class="mobile-scroll-hint">
+       <span>← Arraste para o lado →</span>
+    </div>
 
-/* Headline corrigida */
-.hero-title {
-    font-size: 56px; /* antes estava absurdo */
-    font-weight: 700;
-    line-height: 1.15;
-    color: #fff;
-    max-width: 700px;
-}
+    <div class="portfolio-grid">
 
-.hero-title span {
-    color: var(--accent-color);
-}
+      <div class="portfolio-item" data-category="sites">
+        <div class="portfolio-image">
+          <img src="555shots_so.png" alt="VR Car Detail">
+          <div class="portfolio-overlay">
+            <button class="btn btn-white open-lightbox">Ver projeto</button>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Catálogo Digital</span>
+          <h3 class="portfolio-title">VR Car Detail</h3>
+          <p class="portfolio-desc">Desenvolvimento de site com catálogo interativo de serviços de estética automotiva premium em Ourinhos-SP.</p>
+          <div class="portfolio-results">
+            <span class="result-highlight">Catálogo de Serviços</span>
+            <span class="result-standard">Design de Alto Padrão</span>
+          </div>
+        </div>
+      </div>
 
-/* Subtexto */
-.hero-subtitle {
-    font-size: 18px;
-    color: #aaa;
-    margin: 30px 0;
-    max-width: 500px;
-}
+      <div class="portfolio-item" data-category="marketing">
+        <div class="portfolio-image">
+          <img src="697shots_so.png" alt="Akuri Odontologia">
+          <div class="portfolio-overlay">
+            <button class="btn btn-white open-lightbox">Ver projeto</button>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Marketing Digital</span>
+          <h3 class="portfolio-title">Akuri Odontologia</h3>
+          <p class="portfolio-desc">Estratégia completa de Tráfego Pago, SEO Local e Redes Sociais para clínica em Marília-SP.</p>
+          <div class="portfolio-results">
+            <span class="result-highlight">Topo do Google (SEO)</span>
+            <span class="result-standard">Alta Conversão em Ads</span>
+          </div>
+        </div>
+      </div>
 
-/* Botões */
-.hero-buttons {
-    display: flex;
-    gap: 20px;
-}
+      <div class="portfolio-item" data-category="sistemas">
+        <div class="portfolio-image">
+          <img src="379shots_so.png" alt="Lupa Veículos">
+          <div class="portfolio-overlay">
+            <button class="btn btn-white open-lightbox">Ver projeto</button>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Marketplace & CRM</span>
+          <h3 class="portfolio-title">Lupa Veículos</h3>
+          <p class="portfolio-desc">Plataforma de showroom digital estilo OLX com dashboard administrativo para revenda em Ourinhos-SP.</p>
+          <div class="portfolio-results">
+            <span class="result-highlight">Dashboard de Gestão</span>
+            <span class="result-standard">Showroom Integrado</span>
+          </div>
+        </div>
+      </div>
 
-.btn-primary {
-    background: var(--accent-color);
-    color: #000;
-    padding: 14px 30px;
-    border-radius: 40px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
-}
+      <div class="portfolio-item" data-category="marketing">
+        <div class="portfolio-image">
+          <img src="112shots_so.png" alt="Cícero Montador">
+          <div class="portfolio-overlay">
+            <button class="btn btn-white open-lightbox">Ver projeto</button>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Branding & Performance</span>
+          <h3 class="portfolio-title">Cícero Montador</h3>
+          <p class="portfolio-desc">Identidade visual e tráfego pago estratégico com resultados exponenciais para montador de móveis.</p>
+          <div class="portfolio-results">
+            <span class="result-highlight">131x mais alcance</span>
+            <span class="result-standard">+100% Engajamento</span>
+          </div>
+        </div>
+      </div>
 
-.btn-primary:hover {
-    background: #fff;
-}
+      <div class="portfolio-item" data-category="seo">
+        <div class="portfolio-image">
+          <img src="828shots_so.png" alt="Moraes Climatização">
+          <div class="portfolio-overlay">
+            <button class="btn btn-white open-lightbox">Ver projeto</button>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <span class="portfolio-tag">SEO & Landing Page</span>
+          <h3 class="portfolio-title">Moraes Climatização</h3>
+          <p class="portfolio-desc">Landing Page de alta conversão e SEO Local para serviços de ar-condicionado.</p>
+          <div class="portfolio-results">
+            <span class="result-highlight">1ª Página do Google</span>
+            <span class="result-standard">Foco em Conversão</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-.btn-outline {
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    padding: 14px 30px;
-    border-radius: 40px;
-    text-decoration: none;
-    transition: 0.3s;
-}
+    <div id="portfolioLightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img class="lightbox-content" id="lightboxImg">
+    </div>
 
-.btn-outline:hover {
-    background: var(--accent-color);
-    color: #000;
-}
+    <div class="portfolio-cta">
+      <p>Quer ver seu negócio aqui?</p>
+      <a href="https://wa.me/seunumeroaqui" target="_blank" class="btn btn-primary btn-lg">
+        Começar meu projeto
+      </a>
+    </div>
+  </div>
+</section>
 
-/* Stats lado direito */
-.hero-stats {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    padding-left: 40px;
-    border-left: 1px solid rgba(255,255,255,0.1);
-}
+  <!-- Results Portfolio Section -->
+<section class="results" id="resultados">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-badge">Data Analysis</span>
+      <h2 class="section-title">Resultados <span class="text-gradient">Auditados</span></h2>
+    </div>
 
-.stat-item h3 {
-    font-size: 40px;
-    color: var(--accent-color);
-    margin: 0;
-}
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-id">MOD-01</span>
+          <div class="stat-dot"></div>
+        </div>
+        <div class="stat-body">
+          <div class="stat-value-container">
+            <span class="stat-number" data-target="50">50</span>
+            <span class="stat-suffix">+</span>
+          </div>
+          <p class="stat-label">Negócios atendidos</p>
+        </div>
+      </div>
 
-.stat-item span {
-    font-size: 15px;
-    color: #aaa;
-}
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-id">MOD-02</span>
+          <div class="stat-dot"></div>
+        </div>
+        <div class="stat-body">
+          <div class="stat-value-container">
+            <span class="stat-number" data-target="340">340</span>
+            <span class="stat-suffix">%</span>
+          </div>
+          <p class="stat-label">Aumento médio em visitas</p>
+        </div>
+      </div>
 
-</style>
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-id">MOD-03</span>
+          <div class="stat-dot"></div>
+        </div>
+        <div class="stat-body">
+          <div class="stat-value-container">
+            <span class="stat-number" data-target="5">5</span>
+            <span class="stat-suffix"> anos</span>
+          </div>
+          <p class="stat-label">No mercado</p>
+        </div>
+      </div>
 
-    <!-- Jquery Library File -->
-    <script src="js/jquery-3.7.1.min.js"></script>
-    <!-- Bootstrap js file -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Validator js file -->
-    <script src="js/validator.min.js"></script>
-    <!-- SlickNav js file -->
-    <script src="js/jquery.slicknav.js"></script>
-    <!-- Swiper js file -->
-    <script src="js/swiper-bundle.min.js"></script>
-    <!-- Counter js file -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <!-- Isotop js file -->
-	<script src="js/isotope.min.js"></script>
-    <!-- Magnific js file -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <!-- SmoothScroll -->
-    <script src="js/SmoothScroll.js"></script>
-    <!-- Parallax js -->
-    <script src="js/parallaxie.js"></script>
-    <!-- MagicCursor js file -->
-    <script src="js/gsap.min.js"></script>
-    <script src="js/magiccursor.js"></script>
-    <!-- Text Effect js file -->
-    <script src="js/SplitText.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
-    <!-- YTPlayer js File -->
-    <script src="js/jquery.mb.YTPlayer.min.js"></script>
-    <!-- Typed js file -->
-	<script src="js/typed.js"></script>
-    <!-- Wow js file -->
-    <script src="js/wow.js"></script>
-    <!-- Main Custom js file -->
-    <script src="js/function.js"></script>
-	<script src="../../demo.awaikenthemes.com/assets/js/theme-panel.js"></script>
+      <div class="stat-card">
+        <div class="stat-header">
+          <span class="stat-id">MOD-04</span>
+          <div class="stat-dot"></div>
+        </div>
+        <div class="stat-body">
+          <div class="stat-value-container">
+            <span class="stat-number" data-target="4.9">4.9</span>
+            <span class="stat-suffix">/5</span>
+          </div>
+          <p class="stat-label">Avaliação no Google</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-console">
+      <div class="console-header">
+        <div class="console-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="console-title">CLIENT_FEEDBACK.LOG</span>
+      </div>
+      <div class="console-body">
+        <span class="console-prompt">></span>
+        <blockquote>
+          "Em 3 meses já estávamos no topo do Google. O telefone não para de tocar! A HardTech mudou nosso patamar comercial."
+        </blockquote>
+        <div class="testimonial-author">
+          <p class="author-name">João Silva</p>
+          <p class="author-company">Padaria São João</p>
+          <div class="stars">
+            <span>★★★★★</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Pricing Section -->
+    <section class="pricing" id="planos">
+    <div class="container">
+        <div class="section-header">
+        <span class="section-badge">Investment Control</span>
+        <h2 class="section-title">Planos e <span class="text-gradient">Investimento</span></h2>
+        <p class="section-description">Escalabilidade técnica para todos os tamanhos de operação.</p>
+        
+        <div class="pricing-toggle-wrapper">
+            <div class="pricing-toggle">
+            <button class="toggle-btn active" data-period="mensal">Mensal</button>
+            <button class="toggle-btn" data-period="anual">
+                Anual <span class="toggle-badge">SAVE 20%</span>
+            </button>
+            </div>
+        </div>
+        </div>
+
+        <div class="pricing-cards">
+        <div class="pricing-card">
+            <div class="card-header">
+            <h3 class="plan-name">Core</h3>
+            <p class="plan-desc">Essencial para tração inicial</p>
+            </div>
+            <div class="card-price">
+            <span class="currency">R$</span>
+            <span class="price" data-monthly="799" data-yearly="665">799</span>
+            <span class="period">/mês</span>
+            </div>
+            <ul class="plan-features">
+            <li><span class="check-icon">✓</span> SEO On-Page Básico</li>
+            <li><span class="check-icon">✓</span> Google Meu Negócio</li>
+            <li><span class="check-icon">✓</span> Site (3 páginas)</li>
+            <li><span class="check-icon">✓</span> Suporte via Ticket</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline btn-block">Iniciar Módulo</a>
+        </div>
+
+        <div class="pricing-card featured">
+            <div class="featured-label">Recommended</div>
+            <div class="card-header">
+            <h3 class="plan-name">Pro-Growth</h3>
+            <p class="plan-desc">Aceleração completa de mercado</p>
+            </div>
+            <div class="card-price">
+            <span class="currency">R$</span>
+            <span class="price" data-monthly="1.500" data-yearly="1.250">1.500</span>
+            <span class="period">/mês</span>
+            </div>
+            <ul class="plan-features">
+            <li><span class="check-icon">✓</span> SEO Avançado</li>
+            <li><span class="check-icon">✓</span> <strong>Google Ads Incluso</strong></li>
+            <li><span class="check-icon">✓</span> Site (10 páginas)</li>
+            <li><span class="check-icon">✓</span> Social Media (3x/semana)</li>
+            <li><span class="check-icon">✓</span> WhatsApp Priority</li>
+            </ul>
+            <a href="#contato" class="btn btn-primary btn-block">Upgrade para Pro</a>
+        </div>
+
+        <div class="pricing-card">
+            <div class="card-header">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-desc">Domínio total do nicho</p>
+            </div>
+            <div class="card-price">
+            <span class="currency">R$</span>
+            <span class="price" data-monthly="3.000" data-yearly="2.500">3.000</span>
+            <span class="period">/mês</span>
+            </div>
+            <ul class="plan-features">
+            <li><span class="check-icon">✓</span> SEO Nacional</li>
+            <li><span class="check-icon">✓</span> E-commerce Completo</li>
+            <li><span class="check-icon">✓</span> Gestão Full Stack Ads</li>
+            <li><span class="check-icon">✓</span> Gerente de Conta 24/7</li>
+            </ul>
+            <a href="#contato" class="btn btn-outline btn-block">Consultar Vendas</a>
+        </div>
+        </div>
+    </div>
+    </section>
+
+  <!-- Contact Section -->
+    <section class="contact" id="contato">
+    <div class="contact-glow"></div>
+    
+    <div class="container">
+        <div class="contact-grid">
+        
+        <div class="contact-info">
+            <span class="section-badge">Direct Access</span>
+            <h2 class="section-title">
+            Seu Negócio Merece <br>
+            <span class="text-gradient">Estar no Topo</span>
+            </h2>
+            <p class="contact-desc">
+            Agende uma conversa técnica de 15 minutos. <br>
+            Analisaremos seus dados sem compromisso.
+            </p>
+            
+            <ul class="contact-benefits">
+            <li><span class="benefit-icon">01</span> Diagnóstico gratuito de SEO</li>
+            <li><span class="benefit-icon">02</span> Estratégia de tráfego em 48h</li>
+            <li><span class="benefit-icon">03</span> Garantia de performance HardTech</li>
+            </ul>
+
+            <div class="contact-whatsapp-box">
+            <p>Resposta imediata via canal seguro:</p>
+            <a href="https://wa.me/5514998231397" target="_blank" class="btn-whatsapp-tech">
+                <div class="btn-content">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                <span>Iniciar Conversa</span>
+                </div>
+                <div class="online-status">
+                <span class="online-dot"></span>
+                Encaminhando para especialista
+                </div>
+            </a>
+            </div>
+        </div>
+
+        <div class="contact-form-wrapper">
+            <div class="form-terminal-header">
+            <div class="terminal-dots"><span></span><span></span><span></span></div>
+            <span class="terminal-title">NEW_PROJECT_REQUEST</span>
+            </div>
+            <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label>NOME_OPERADOR</label>
+                <input type="text" name="name" placeholder="Digite seu nome completo" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                <label>CONTATO_TEL</label>
+                <input type="tel" name="phone" placeholder="(11) 99999-9999" required>
+                </div>
+                <div class="form-group">
+                <label>MODALIDADE</label>
+                <select name="service" required>
+                    <option value="seo">SEO</option>
+                    <option value="trafego">Tráfego Pago</option>
+                    <option value="site">Criação de Site</option>
+                </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>DESCRIÇÃO_DA_MISSÃO</label>
+                <textarea name="message" placeholder="Quais são seus objetivos?" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+                EXECUTAR ESTRATÉGIA
+            </button>
+            </form>
+        </div>
+
+        </div>
+    </div>
+    </section>
+  <!-- Footer -->
+   <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo" aria-label="HardTech Home">
+          <div class="logo-symbol">
+            <img src="https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png" alt="" class="logo-img">
+          </div>
+          <span class="logo-text">HardTech</span>
+        </a>
+        <p class="footer-desc">Transformamos dados em faturamento. Marketing de performance e infraestrutura digital para empresas que buscam o próximo nível.</p>
+        
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Instagram">IG</a>
+          <a href="#" class="social-link" aria-label="LinkedIn">IN</a>
+          <a href="#" class="social-link" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>SITEMAP_CORE</h4>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Cases</a></li>
+          <li><a href="#planos">Investimento</a></li>
+          <li><a href="#contato">Work with us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4>STACK_TECH</h4>
+        <ul>
+          <li><a href="#">Google Ads</a></li>
+          <li><a href="#">Meta Business</a></li>
+          <li><a href="#">SEO Analytics</a></li>
+          <li><a href="#">Web Core Vitals</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>DIRECT_LINE</h4>
+        <ul>
+          <li>
+            <span class="contact-icon">TEL</span>
+            <a href="tel:+5514998231397">(11) 99999-9999</a>
+          </li>
+          <li>
+            <span class="contact-icon">MAIL</span>
+            <a href="mailto:contato@hardtech.com.br">contato@hardtech.com.br</a>
+          </li>
+          <li>
+            <span class="contact-icon">LOC</span>
+            <span>São Paulo, SP - BR</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copy-text">© 2026 HARDTECH_SYSTEMS. ALL RIGHTS RESERVED.</p>
+      <div class="footer-legal">
+        <a href="#">PRIVACY_POLICY</a>
+        <a href="#">TERMS_OF_SERVICE</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://wa.me/5514998231397" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+      <path d="m18 15-6-6-6 6"></path>
+    </svg>
+  </button>
+
+  <script src="script.js"></script>
 </body>
-
-<!-- Mirrored from html.awaikenthemes.com/artistic/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 11 Feb 2026 19:03:32 GMT -->
 </html>
